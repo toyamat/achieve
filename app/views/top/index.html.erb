@@ -1,0 +1,57 @@
+<% if flash[:notice] %>
+  <div class="alert alert-success">
+    <%= flash[:notice]%>
+  </div>
+<% end %>
+
+ <section class="main-header">    
+    <img src="<%= asset_path "achieve.png" %>">
+ </section>
+ 
+ <section class="about">
+    <h1>About Achieve</h1>
+    <P>
+        Achieveは、受講生のために作成された、教材用アプリです。<br>
+        Achieveを作り終えることで、SecondcTeamに参加するための力を身につけることができます。
+    </P>
+    <P>
+        Achieveを一言で表すと、タスク管理アプリです。<br>
+        チームメンバーが、今どのようなタスクを行っているかリアルタイムで把握することができます。
+    </P>
+ </section>
+ 
+ <section class="function container-fluid">
+    <div class="row">
+    <h2>Function</h2>
+      <div class="function-images">
+        <div class="col-md-3 col-sm-6">
+            <div class="function-images">
+              <img src="<%= asset_path "key.png" %>">
+              <P>ログイン機能</P>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="function-image">
+            <img src="<%= asset_path "mails.png" %>">
+            <P>メール送信機能</P>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="function-image">
+            <img src="<%= asset_path "girls.png" %>">
+            <P>友達つながり機能</P>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="function-image">
+            <img src="<%= asset_path "comment.png" %>">
+            <P>コメント投稿機能</P>
+          </div>
+        </div>
+      </div>
+    </div>
+ </section>
+
+<div id="page-top-btn" class="page-top-btn">
+  <p><a class="move-page-top" id="move-page-top">▲</a></p>
+</div>
